@@ -1,7 +1,50 @@
-<app-header></app-header>
-<p>
-    <app-dropdown></app-dropdown>
-</p>
-<app-knob></app-knob>
-<app-doughnut></app-doughnut>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <script type="module" src="/src/main.js"></script>
+    <title>Tailwind CSS Grid Example</title>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Set height to full viewport height */
+        }
+    </style>
+</head>
+<body class="bg-red-300">
+    <header class="flex justify-between text-red-800 pt-4 px-8 ">
+        <a href="/" class="text-lg font-bold">Tailwind CSS Grid Example</a>
+    </header>
+    <div class="grid grid-cols-3 gap-3 m-4  ">
+        <div class="row-span-3 bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            <app-doughnut></app-doughnut>
+        </div>
+        <div class="row-span-2 bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            <app-progress-bar></app-progress-bar>
+        </div>
+        <div class="bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            <app-knob></app-knob>
+        </div>
+        <div class="bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            <app-dropdown></app-dropdown>
+        </div>
+        <div class="col-span-2 bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            <app-header></app-header>
+        </div>
+        <div class="bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            Cell 6
+        </div>
+        <div class="bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            Cell 7
+        </div>
+        <div class="bg-red-100 p-3 rounded-md flex items-center justify-center shadow-sm">
+            Cell 8
+        </div>
+    </div>
+</body>
+</html>

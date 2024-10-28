@@ -5,6 +5,7 @@ import { HeaderComponent } from "./header/header.component";
 import { DropdownComponent } from "./dropdown/dropdown.component";
 import { KnobComponent } from "./knob/knob.component";
 import { DoughnutComponent } from "./doughnut/doughnut.component";
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { DoughnutComponent } from "./doughnut/doughnut.component";
     HeaderComponent,
     DropdownComponent,
     KnobComponent,
-    DoughnutComponent
+    DoughnutComponent,
+    ProgressBarComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
